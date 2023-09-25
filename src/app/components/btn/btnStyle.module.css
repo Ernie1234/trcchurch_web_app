@@ -1,0 +1,15 @@
+.btn1 {
+  color: red;
+  border: none;
+  color: var(--txt-white);
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  padding: 1.2rem 2.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn1:hover {
+  transform: scale(1.03);
+}

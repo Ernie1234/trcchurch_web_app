@@ -1,0 +1,65 @@
+/* styles/masonry.css */
+
+.my_masonry_grid {
+  display: flex;
+  margin-left: -16px; /* Adjust as needed */
+  width: auto;
+  padding: 6rem 8rem;
+}
+.my__masonry__grid_column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+.grid_item {
+  margin-bottom: 16px; /* Adjust as needed */
+  height: 35vh;
+  position: relative;
+}
+
+.masonry__img {
+  object-fit: cover;
+}
+
+/* PROGRAMS MASONRY STYLES */
+.program_gap {
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+.link,
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: var(--txt-white);
+  transition: all ease;
+}
+
+.link__bg {
+  margin-bottom: 3rem;
+  background-color: var(--bg-dark-trans-30);
+  box-shadow: var(--shadow-light);
+}
+.link__bg:hover,
+.link__bg:focus {
+  background-color: var(--bg-dark-trans-30);
+  box-shadow: var(--shadow-dark);
+}
+.link__img {
+  object-fit: cover;
+  transform: scale(1);
+  transition: all ease;
+}
+.link__title {
+  margin-top: -1rem;
+  padding-left: 0.8rem;
+  font-size: 2.5rem;
+  color: currentColor;
+  text-transform: capitalize;
+}
+.link__desc {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: currentColor;
+  padding-left: 0.8rem;
+  padding-bottom: 2rem;
+}

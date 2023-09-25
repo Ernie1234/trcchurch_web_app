@@ -1,0 +1,78 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --line: 1px solid var(--color-grey-light-2);
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.09);
+
+  --bp-largest: 75em; /* 1200px  {1200/16 = 75} */
+  --bp-large: 68.75em; /* 1100px  {1100/16 = 68.75} */
+  --bp-medium: 56.25em; /* 900px  {900/16 = 56.25} */
+  --bp-small: 37.5em; /* 600px  {900/16 = 56.25} */
+  --bp-smallest: 31.25em; /* 500px  {900/16 = 56.25} */
+  --txt-green: #aad43c;
+  --txt-dark: #252525;
+  --txt-white: #fff;
+  --bg-very-dark: #151515;
+  --bg-dark: #252525;
+  --bg-green: #90c23e;
+  --bg-light: #efeff0;
+  --bg-white: #fff;
+  --bg-dark-trans-90: rgba(51, 51, 51, 0.9);
+  --bg-dark-trans-70: rgba(51, 51, 51, 0.75);
+  --bg-dark-trans-50: rgba(51, 51, 51, 0.5);
+  --bg-dark-trans-30: rgba(51, 51, 51, 0.3);
+  --bg-light-trans-10: rgba(239, 239, 240, 0.1);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: var(--bp-large)) {
+    font-size: 50%;
+  }
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Poppins,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body {
+  padding-top: 7rem;
+}
+.light {
+  background-color: var(--bg-light);
+  color: var(--txt-dark);
+}
+.dark {
+  background-color: var(--bg-dark);
+  color: var(--txt-white);
+}
+.theme {
+  transition: 1s all ease;
+}

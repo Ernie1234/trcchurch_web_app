@@ -1,0 +1,9 @@
+.headin {
+  width: 70vw;
+  margin-top: 10rem;
+}
+@media (max-width: 768px) {
+  .headin {
+    margin-top: 6rem;
+  }
+}

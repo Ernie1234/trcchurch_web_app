@@ -1,0 +1,43 @@
+.mode__toggle {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  border-radius: 50%;
+  z-index: 200;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all ease;
+}
+@media (max-width: 56.25em) {
+  .mode__toggle {
+    bottom: 4rem;
+    right: 4rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .mode__toggle {
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+.mode__toggle:hover {
+  transform: scale(1.05);
+}
+/* .mode__light {
+  transform: translateY(100%);
+} */
+/* .mode__dark{} */
+
+.icon {
+  /* padding: 2rem; */
+  display: block;
+  font-size: 2.5rem;
+}
