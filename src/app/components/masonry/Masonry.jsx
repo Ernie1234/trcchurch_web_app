@@ -40,6 +40,11 @@ const MasonryGrid = ({ data, morePage }) => {
                 {item.description && (
                   <h4 className={styles.link__desc}>{item?.description}</h4>
                 )}
+                {item.startDate && (
+                  <h4
+                    className={styles.link__desc}
+                  >{`starts on ${item?.startDate}`}</h4>
+                )}
               </div>
             </Link>
           ))}
