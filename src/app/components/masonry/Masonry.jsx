@@ -37,8 +37,8 @@ const MasonryGrid = ({ data, morePage }) => {
                 {item.title && (
                   <h3 className={styles.link__title}>{item?.title}</h3>
                 )}
-                {item.desc && (
-                  <h4 className={styles.link__desc}>{item?.desc}</h4>
+                {item.description && (
+                  <h4 className={styles.link__desc}>{item?.description}</h4>
                 )}
               </div>
             </Link>

@@ -6,7 +6,18 @@ import styles from "./program.module.css";
 import { program } from "../libs/data";
 import Live from "../components/live/Live";
 
-const Program = () => {
+async function getData() {
+  const res = await fetch("http://localhost:3000/api/program", {
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return res.json();
+}
+const Program = async () => {
+  const data = await getData();
+  console.log(data);
   return (
     <>
       <Header
@@ -23,7 +34,7 @@ const Program = () => {
       <div className={styles.headin}>
         <Heading main="Our Programs" sub="features and events" />
       </div>
-      <MasonryGrid data={program} morePage />
+      <MasonryGrid data={data} morePage />
     </>
   );
 };
