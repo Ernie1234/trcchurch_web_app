@@ -22,7 +22,11 @@ const MasonryGrid = ({ data, morePage }) => {
           columnClassName={`${styles.my__masonry__grid_column} ${styles.program_gap}`}
         >
           {data?.map((item, index) => (
-            <Link key={index} href="/program/id" className={styles.link}>
+            <Link
+              key={index}
+              href={`/program/${item?._id}`}
+              className={styles.link}
+            >
               <div className={styles.link__bg}>
                 <div className={styles.grid_item}>
                   {/* {item?.img} */}
