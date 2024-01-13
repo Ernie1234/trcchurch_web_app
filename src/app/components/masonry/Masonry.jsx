@@ -25,12 +25,13 @@ const MasonryGrid = ({ data, morePage }) => {
             <Link key={index} href="/program/id" className={styles.link}>
               <div className={styles.link__bg}>
                 <div className={styles.grid_item}>
+                  {/* {item?.img} */}
                   <Image
                     quality={100}
                     fill
                     sizes="(min-width: 808px) 50vw, 100vw"
-                    alt="pastor"
-                    src={item?.url}
+                    alt="program"
+                    src={item?.img}
                     className={styles.link__img}
                   />
                 </div>

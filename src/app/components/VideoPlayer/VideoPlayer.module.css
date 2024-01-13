@@ -1,0 +1,14 @@
+.videoplayerWrapper {
+  height: 85rem;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .videoplayerWrapper {
+    height: 65rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .videoplayerWrapper {
+    height: 35rem;
+  }
+}

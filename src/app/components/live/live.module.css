@@ -1,4 +1,45 @@
-.live {
+.wrapper {
+  padding: 0 8rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.title {
   color: currentColor;
   font-size: 5rem;
+  padding-bottom: 1.3rem;
+}
+.detailsWrapper {
+  padding-top: 1.5rem;
+}
+.preacher {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: var(--color-grey-dark-3);
+  padding-bottom: 0.6rem;
+}
+.info {
+  font-size: 1.5rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 2.5rem;
+  }
+  .detailsWrapper {
+    padding: 0.8rem 1.5rem;
+  }
+  .title {
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0;
+  }
+  .title {
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+  }
 }
