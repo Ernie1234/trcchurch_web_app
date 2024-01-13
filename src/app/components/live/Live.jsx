@@ -15,12 +15,17 @@ const Live = () => {
 
   return (
     <div className={styles.wrapper}>
-      <VideoPlayer videosrc={data.YoutubeLink} />
+      <VideoPlayer videosrc={data?.YoutubeLink} />
       <div className={styles.detailsWrapper}>
-        <h1 className={styles.title}>{data.title}</h1>
+        <h1 className={styles.title}>{data?.title}</h1>
         <div>
-          <p className={styles.preacher}>{data.preacher}</p>
-          <p className={styles.info}>{`Info: ${data.desc}`}</p>
+          <span style={{ display: "flex" }}>
+            <p className={styles.preacher}>{data?.preacher} </p>
+            {data?.guestMinisters && (
+              <p className={styles.preacher}>{` ft ${data?.guestMinisters}`}</p>
+            )}
+          </span>
+          <p className={styles.info}>{`Info: ${data?.desc}`}</p>
         </div>
       </div>
     </div>
