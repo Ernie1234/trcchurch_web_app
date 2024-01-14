@@ -4,6 +4,7 @@ import ModeBtn from "./components/btn/ModeBtn";
 import Navbar from "./components/navbar/nav/Navbar";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
+import AuthProvider from "./components/AuthProvider/AuthProvider";
 
 const poppins = Poppins({
   weight: [
@@ -32,9 +33,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <ThemeProvider>
-          <Navbar />
-          {children}
-          <ModeBtn />
+          <AuthProvider>
+            <Navbar />
+            {children}
+            <ModeBtn />
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
