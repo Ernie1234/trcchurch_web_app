@@ -23,7 +23,7 @@ const MasonryGrid = ({ data, morePage }) => {
         >
           {data?.map((item, index) => (
             <Link
-              key={index}
+              key={item?._id}
               href={`/program/${item?._id}`}
               className={styles.link}
             >
